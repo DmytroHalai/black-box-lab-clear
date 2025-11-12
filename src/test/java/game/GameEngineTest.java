@@ -1,10 +1,10 @@
-package game_tests;
+package game;
 
-import org.example.app_logic.api.GameEngine;
-import org.example.test_runner.GameEngineFactory;
+import org.example.logic.api.*;
+import org.example.runner.GameEngineFactory;
 import org.junit.jupiter.api.BeforeEach;
 
-class EngineTest {
+class GameEngineTest {
     private GameEngine engine;
 
     @BeforeEach
@@ -19,4 +19,6 @@ class EngineTest {
      записані лише ті імплементації тестів, які пройшли усі тести. Ваша задача - знайти ту єдину, яка є правильною
      шляхом покриття роботи головного "двигуна" гри юніт-тестами.
      */
+
+    
 }

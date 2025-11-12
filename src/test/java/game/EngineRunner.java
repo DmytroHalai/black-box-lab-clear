@@ -1,6 +1,6 @@
-package game_tests;
+package game;
 
-import org.example.test_runner.GameEngineFactory;
+import org.example.runner.GameEngineFactory;
 import org.junit.platform.engine.TestExecutionResult;
 import org.junit.platform.launcher.*;
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
@@ -42,7 +42,7 @@ public class EngineRunner {
             launcher.registerTestExecutionListeners(listener);
 
             LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
-                    .selectors(selectClass(EngineTest.class))
+                    .selectors(selectClass(GameEngineTest.class))
                     .build();
 
             launcher.execute(request);
